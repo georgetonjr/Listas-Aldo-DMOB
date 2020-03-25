@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body id="body">
+  <select name="cores" id="cor">
+    <option value=""></option>
+    <option value="vermelho">vermelho</option>
+    <option value="verde">Verde</option>
+    <option value="azul">Azul</option>
+    <option value="amarelo">Amarelo</option>
+  </select>
+</body>
+</html>
+
+<script>
+  document.getElementById("cor").value; 
+  var cor = '';
+  var body = document.getElementById('body');
+  var seletor = document.addEventListener('change', () => {
+    cor = document.getElementById("cor").value;
+
+    switch (cor){
+      case '':
+      body.style.backgroundColor = 'white';
+      break;
+      case 'vermelho':
+        body.style.backgroundColor = '#F2330A';
+        break;
+
+      case 'verde':
+        body.style.backgroundColor = '#00F704';
+        break;
+
+      case 'azul':
+        body.style.backgroundColor = '#0069F7';
+        break;
+      
+      case 'amarelo':
+        body.style.backgroundColor = '#F7E400';
+        break;
+    }
+  })
+  
+ 
+
+</script>

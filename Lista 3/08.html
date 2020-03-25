@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="" method="get" onsubmit="submeter">
+    Nome: <input required id="nome" type="text" placeholder="Nome"><br/><br/>
+    <input type="radio" name="PF" id="pf">Pessoa fisica  <input type="radio" name="PJ" id="pj">Pessoa Juridica<br/><br/>
+    CPF: <input disabled type="number" id="cpf" placeholder="000.000.000-00"><br/><br/>
+    CNPJ: <input disabled type="number" id="cnpj"><br/><br/>
+    Ano de nascimento: <input disabled type="date" name="birthday" id="birthday"><br/><br/>
+    Endereço: <input required id="adress" type="text"><br/><br/>
+    Cep: <input required type="number" id="cep"><br/><br/>
+    Telefone: <input required type="number" id="phone"><br/><br/>
+    <input type="submit" value="enviar" id="submeter">
+  </form>
+</body>
+</html>
+<script>
+var pf = document.getElementById('pf')
+var pj = document.getElementById('pj')
+var cpf = document.getElementById('cpf')
+var cnpj = document.getElementById('cnpj')
+var birth = document.getElementById('birthday')
+pf.addEventListener('click', ()=>{
+  pj.checked = false
+  cpf.disabled = false
+  birth.disabled = false
+  cnpj.disabled = true
+})
+pj.addEventListener('click', ()=>{
+  pf.checked = false  
+  cpf.disabled = true
+  birth.disabled = true
+  cnpj.disabled = false
+})
+function submeter(){
+  alert('Usuario cadastrado como sucesso')
+}
+</script>

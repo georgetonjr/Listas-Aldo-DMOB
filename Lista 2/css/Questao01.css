@@ -1,0 +1,24 @@
+ p {
+  border-left: 20em solid green;
+  border-right: 20em solid red;
+  height: 400px;
+  width: 60%;
+  font-size: 12px;
+  text-align: justify;
+  font-family: Verdana;
+  text-indent: 25px;
+  word-spacing: 4ex;
+  letter-spacing: 3em;
+  text-indent: 25px;
+  
+ 
+}
+p::first-letter{
+  font-size: 36px;
+  color: blue;
+  text-decoration: overline;
+}
+p::first-line{
+  text-decoration: underline;
+  text-transform: uppercase;
+}

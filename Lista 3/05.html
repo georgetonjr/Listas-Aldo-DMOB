@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="" method="GET" onsubmit="enviar()" >
+    <input required name="user" type="text" placeholder="Usuario"><br/>
+    <input id="pass" type="password" placeholder="Senha" size="10" required minlength="6" maxlength="10"><br/>
+    <input id="confirmpass" required size="10" minlength="6" maxlength="10" type="password" placeholder="Confirmar senha"><br/><br/>
+
+    <input type="submit" value="Enviar">
+  </form>
+  
+</body>
+</html>
+
+<script>
+  function enviar() {
+    var passs = document.getElementById('pass').value
+    var pass_c = document.getElementById('confirmpass').value
+    if (passs ==pass_c){
+      alert('As senhas são iguais')
+    }
+    else  
+      alert('As senhas não conferem')
+
+  }
+ 
+</script>

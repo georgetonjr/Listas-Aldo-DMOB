@@ -1,0 +1,15 @@
+.adidas:hover {
+  display: none;
+}
+
+.adidas1:hover {
+  display: block;
+}
+
+.master:hover {
+  display: none;
+}
+
+.master1:hover {
+  display: block;
+}

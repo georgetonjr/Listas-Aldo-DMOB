@@ -1,0 +1,59 @@
+			.a{
+				text-decoration: none;
+				color: black;
+			}
+			.b:visited {
+				text-decoration: underline;
+			}
+
+			.b{
+				text-decoration: overline;
+			}
+
+			.b {
+				text-decoration:line-through;
+			}
+
+			.c{
+				color: orange;
+				text-decoration: none;
+				
+			}
+
+			.c:hover{
+				text-decoration: underline;
+				color: green;
+			}
+
+			.d{
+				border: 5px solid blue;
+				background-color: black;
+				color: white;
+			}
+
+			.d:hover{
+				text-decoration: none;
+				border: 5px dotted black;
+				background-color: white;
+				color: black;
+			}
+
+			.e{
+				color: red;
+				text-decoration: none;
+			}
+
+			.e:visited{
+				font-weight: bold;
+				font-style: italic;
+				color: orange;
+				
+			}
+
+			.e:hover{
+				text-decoration: underline;
+			}
+
+			.e:active{
+				color: yellow;
+			}

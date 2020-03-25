@@ -1,0 +1,7 @@
+.menu img:hover {
+  border: 2px solid red;
+}
+
+.menu p:hover {
+  text-decoration: underline red;
+}

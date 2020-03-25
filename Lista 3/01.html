@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body id="body">
+  <input id="vermelho" type="button" value="Vermelho">
+  <input id="verde" type="button" value="Verde">
+  <input id="azul" type="button" value="Azul">
+  <input id="amarelo" type="button" value="Amarelo"> 
+</body>
+</html>
+
+<script>
+  var body = document.getElementById('body');
+  var btnvermelho = document.querySelector('#vermelho').addEventListener('click', function(){
+      body.style.backgroundColor = '#F2330A';
+  })
+
+  var btnverde = document.querySelector('#verde').addEventListener('click', function(){
+      body.style.backgroundColor = '#00F704';
+  })
+
+  var btnazul = document.querySelector('#azul').addEventListener('click', function(){
+      body.style.backgroundColor = '#0069F7';
+  })
+
+  var btnamarelo = document.querySelector('#amarelo').addEventListener('click', function(){
+      body.style.backgroundColor = '#F7E400';
+  })
+  
+</script>

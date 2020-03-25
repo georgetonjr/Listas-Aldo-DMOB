@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="text" placeholder="nome 1" id="name0" onblur="insert(this.value)"><br/>
+  <input type="text" placeholder="nome 2" id="name1" onblur="insert(this.value)"><br/>
+  <input type="text" placeholder="nome 3" id="name2" onblur="insert(this.value)"><br/>
+  <input type="text" placeholder="nome 4" id="name3" onblur="insert(this.value)"><br/>
+  <input type="text" placeholder="nome 5" id="name4" onblur="insert(this.value)"><br/>
+  <input type="button" value="submeter" onclick="invert()">
+</body>
+</html>
+<script>
+  var names = []
+  function insert(name){
+    names.push(`${name}`)
+  } 
+  
+  function invert(){
+    var reverse = names.reverse()
+    for(let i = 0; i<5; i++){
+      document.getElementById(`name${i}`).value = reverse[i]
+    }  
+  }
+</script>

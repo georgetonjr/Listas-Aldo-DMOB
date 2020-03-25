@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input id="bt" type="button" value="Ocultar/Mostrar">
+  <p id="texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus magnam maxime nulla molestias atque quas maiores tenetur assumenda qui ipsum, natus fugiat obcaecati odio nemo neque dignissimos eius reiciendis voluptates?</p>
+</body>
+</html>
+
+<script>
+  var btn = document.getElementById('bt');
+  var p = document.querySelector('#texto');
+  btn.addEventListener('click', () =>{
+    if (p.style.display == 'none'){
+      p.style.display = 'block';
+    }
+    else {
+      p.style.display = 'none';
+    }
+  })
+</script>

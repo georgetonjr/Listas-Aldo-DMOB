@@ -1,0 +1,41 @@
+.menu-horiz{
+  display: flex;
+}
+
+.menu-horiz ul {
+  display: inline-block;
+  list-style-type: none;
+  margin-top: 40px;
+}
+
+.menu-horiz li {
+  display: inline-block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 29px;
+  padding: 15px 40px 0 12px;
+}
+
+.notiA {
+  color: red;
+}
+
+.esporA {
+  color: #86b010 ;
+}
+
+.entretA {
+  color: #f59228;
+}
+
+.videoA {
+  color: #0c64fc;
+}
+
+.menu-horiz ul li a:hover {
+  text-decoration: overline; 
+}
+
+.menu-horiz {
+  border: 2px solid #027ffc;
+}

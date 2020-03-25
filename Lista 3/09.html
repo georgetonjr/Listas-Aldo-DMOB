@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input id="nome1" type="text" onblur="insertnome1(this.value)"><br/><br/>
+  <input id="nome2" type="text" onblur="insertnome2(this.value)"><br/><br/>
+  <input id="intercalado" disabled type="text"> 
+</body>
+</html>
+<script>
+  var nomes = []
+  function insertnome1(nome){
+    nomes.push(nome) 
+  }
+  var exibir = document.getElementById('intercalado')
+  function insertnome2(nome){
+    nomes.push(nome)
+    var somanomes = nomes[0]+ nome[1]
+    nomes.reverse()
+    nomes.sort()
+    somanomes = somanomes + nomes[0] + nomes[1]
+    exibir.value = somanomes
+  }
+</script>

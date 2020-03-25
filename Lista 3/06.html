@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+ Palidromo: <input id="texto" type="text" onblur="palidromo(this.value)"> 
+</body>
+</html>
+<script>
+  var word = []
+  function palidromo(palavra){
+   let pali = palavra.split('').reverse().join('')
+   if((palavra == pali) && palavra !== '')
+     alert(`Sua palavra e um palidromo, sua palavra: ${palavra}, palidromo: ${pali}`)
+   else
+      alert('Sua palavra não é um palidromo')
+  }
+</script>
