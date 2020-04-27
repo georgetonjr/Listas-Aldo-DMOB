@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista 05</title>
+</head>
+<body>
+  <div id="questao01">
+    <H2>Questão 01</H2>
+    Números a serem somados:&nbsp;<input type="number" name="soma" id="campo01">
+    <input type="button" value="Gerar campos" id="btnqt01">
+  </div>
+  <div id="questao02">
+    <H2>Questão 02</H2>
+    <form action="/operacao" id="form2">
+      Número 01:&nbsp;&nbsp; <input type="number" name="v1" id=""><br/>
+      Número 02:&nbsp;&nbsp; <input type="number" name="v2" id=""><br/>
+      <input type="button" value="Somar" id="soma">
+      <input type="button" value="Subtrair" id="sub">
+    </form>
+  </div>
+</body>
+</html>
+<script>
+  //Questâo 01
+ var element_pai =document.querySelector('#questao01') 
+ var btnqt01 = document.querySelector('#btnqt01')
+ cont = 0
+ btnqt01.addEventListener('click',()=> {
+   var campo01 = document.querySelector('#campo01').value
+   var form01 = document.createElement("form")
+   form01.setAttribute('action', '/s')
+   form01.setAttribute('method', 'post')
+   for(cont = 0; cont< campo01; cont++){
+     var input = document.createElement("input")
+     var br = document.createElement("br") 
+     input.setAttribute('name', `n${cont}`)
+     form01.appendChild(input)
+     form01.appendChild(br)
+   }
+   var button = document.createElement("input")
+   button.setAttribute('type','submit')
+   button.setAttribute('value', 'Somar')
+   form01.appendChild(button)
+   element_pai.appendChild(form01)
+   document.querySelector('#btnqt01').setAttribute('disabled', 'true')
+ })
+ //-------------------------------------------------------------
+ //Questâo 02
+ var form2 = document.querySelector('#form2')
+ document.querySelector('#soma').addEventListener('click',()=> {
+  form2.setAttribute('method', 'post') 
+  form2.submit();
+ })
+ document.querySelector('#sub').addEventListener('click',()=> {
+  form2.setAttribute('method', 'get') 
+  form2.submit();
+ })
+</script>
