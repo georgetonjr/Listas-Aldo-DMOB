@@ -11,7 +11,7 @@ router.get('/', (req, res)=>{
 })
 
 router.post('/s', (req, res)=>{
-  if (!req.body && !req.params){
+  if (!req.body){
     res.send("ThErE iS sOmEtHiNg WrOnG, PlEaSe TrY aGaIn!!!")
   }
   var soma = 0
